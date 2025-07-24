@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo daora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+
+
+    <section>
+
+        <div class="header">
+            <h1>PROGRESSO</h1>
+            <h2>Objetivo: 100000 GRAMPAS</h2>
+            <div class="barra-container">
+                <div class="barra-progresso"></div>
+            </div>
+        </div>
+
+        
+
+        <div class="main">
+            <div class="left">
+                <p>Grampas: </br> <span class="valor brilho">0</span> </p>
+                <div class="gem-img-container">
+                    <img src="fotos/pepe.png" alt="gato" class="imagem-clicker" onclick="incrementar()" draggable="false">
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="upgrate" onclick="comprarUpgrade('Clicker')">
+                    <div class="left-section">
+                        <img src="https://images.tcdn.com.br/img/img_prod/1140357/caneta_esferografica_bic_cristal_dura_mais_azul_ponta_media_de_1_0mm_kit_10_unidades_2640_3_0156dd57ba414a1c3af6683b4614af4f.jpg" alt="a" class="imagem-upgrade">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Caneta Azul</h4>
+                        <div class="custo-info">
+                            <p class="cost-text"> <span class="clicker-cost">10</span> Grampas</p>
+                            <img src="fotos/pepe.png" alt="custo" class="imagem-custo">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        nivel <span class="clicker-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">1</span> Grampas </br> por clique
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrate" onclick="comprarUpgrade('Pickaxe')">
+                    <div class="left-section">
+                        <img src="https://bretas.vtexassets.com/arquivos/ids/194529/6571c80a558925a4e889a88d.jpg?v=638375523976470000" alt="a" class="imagem-upgrade">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Calabrezo</h4>
+                        <div class="custo-info">
+                            <p class="cost-text"> <span class="pickaxe-cost">100</span> Grampas</p>
+                            <img src="fotos/pepe.png" alt="custo" class="imagem-custo">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        nivel <span class="pickaxe-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="pickaxe-increase">4</span> Grampas </br> por segundo
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="upgrate" onclick="comprarUpgrade('Miner')">
+                    <div class="left-section">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTi8VhW3XuujhDuK7g76XvlD1DfuSg4fYEEg&s" alt="a" class="imagem-upgrade">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Lil Petey</h4>
+                        <div class="custo-info">
+                            <p class="cost-text"> <span class="miner-cost">500</span> Grampas</p>
+                            <img src="fotos/pepe.png" alt="custo" class="imagem-custo">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        nivel <span class="miner-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="miner-increase">12</span> Grampas </br> por segundo
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrate" onclick="comprarUpgrade('Factory')">
+                    <div class="left-section">
+                        <img src="https://odia.ig.com.br/_midias/jpg/2023/12/08/1200x750/1_manuel_gomes_site-31376485.jpg" alt="a" class="imagem-upgrade">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Manuel Gomes</h4>
+                        <div class="custo-info">
+                            <p class="cost-text"> <span class="factory-cost">800</span> Grampas</p>
+                            <img src="fotos/pepe.png" alt="custo" class="imagem-custo">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        nivel <span class="factory-level">0</span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="factory-increase">82</span> Grampas </br> por segundo
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrate" onclick="comprarFinal('Gato')">
+                    <div class="left-section">
+                        <img src="https://preview.redd.it/precisamos-estudar-o-fen%C3%B4meno-davi-brito-v0-jo2tfxolv1se1.jpeg?width=640&crop=smart&auto=webp&s=5381d47de0c235a6d9e33cf8b0024192daba77bd" alt="a" class="imagem-upgrade">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Davi Brito</h4>
+                        <div class="custo-info">
+                            <p class="cost-text"> <span class="gato-cost">100000</span> Grampas</p>
+                            <img src="fotos/pepe.png" alt="custo" class="imagem-custo">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <span class="gato-level"></span>
+                    </div>
+
+                    <div class="next-level-info">
+                        <p>
+                            <span>O... Fim? </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="statistics">
+            <div class="texts">
+                <p>Grampas P/click: <span id="gpc-text" class="brilho">1</span></p>
+                <p>Grampas P/second: <span id="gps-text" class="brilho">0</span></p>
+            </div>
+        </div>
+
+        <div class="util-buttons">
+            <button class="util-button" onclick="save()">
+                Salvar
+            </button>
+            <button class="util-button" onclick="load()">
+                Carregar
+            </button>
+            <button class="util-button" onclick="extras()"> 
+                Extras...
+            </button>
+        </div>
+    </section>
+
+    <div class="dialogo-container" id="dialogo" onclick="proximoDialogo()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jnRibQ0JdnvLeCUgDZcnE93Y6Sk-dF_F_w&s" alt="personagem" class="dialogo-personagem">
+        <div class="dialogo-caixa">
+            <p id="texto-dialogo"></p>
+            <button onclick="proximoDialogo()" id="btn-proximo"> >> Próximo</button>
+        </div>
+    </div>
+
+    <div class="dialogo-container" id="dialogo-final" onclick="proximoDialogoFinal()" style="display: none;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6jnRibQ0JdnvLeCUgDZcnE93Y6Sk-dF_F_w&s" class="dialogo-personagem">
+        <div class="dialogo-caixa">
+            <p id="texto-dialogo-final"></p>
+            <button id="btn-proximo-final" onclick="proximoDialogoFinal()">>> Próximo</button>
+        </div>
+    </div>
+
+    <div id="carta-aniversario" class="carta-container" style="display: none;">
+        <div class="carta-conteudo">
+            <h2>Dedicado para Pepe </h2>
+            <p>Feliz aniversário manin!</p>
+            <p>Um abraço!!!</p>
+            <p>24/07/2025</p>
+            <p>De seu amigo, "El gato "</p>
+            <br>
+            <button onclick="fecharCarta()" class="util-button">Fechar</button>
+        </div>
+    </div>
+
+    <audio id="musica-fundo" src="sons/musica-fundo.mp3" loop></audio>
+
+    <audio id="click" src="sons/clicou.mp3" ></audio>
+
+    <audio id="somcomprar" src="sons/laele.mp3" ></audio>
+
+    <audio src="sons/calma.mp3" id="somcalma"></audio>
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
